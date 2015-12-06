@@ -18,10 +18,65 @@
     <script src="base.js"></script>
   </head>
   <body>
+
+  <!-- NAVBAR -->
+  <div class="header">
+    <nav class="navbar" role="navigation">
+      <div class="nav container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#home" class="navbar-brand scroll"><%= image_tag "#"%></a>
+        </div>
+        <!--/.navbar-header-->
+        <!-- <ul class="nav navbar-nav navbar-right hidden-xs">
+          <li id="blognav"><a href="/blog" target="_blank">BLOG</a></li>
+        </ul> -->
+        <ul class="nav navbar-nav navbar-right scrollnav hidden-xs">
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav scrollnav visible-xs">
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right visible-xs">
+            <li id="blognav"><a href="/blog" target="_blank">BLOG</a></li>
+          </ul> -->
+        </div>
+      </div>
+      <!--/#main-nav.navbar-collapse-->
+    </nav>
+    <!--/.navbar-->
+  </div>
+
+  <div id="projects">
+      <strong>projects</strong>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <div id="about">
+      <strong>about</strong>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <div id="contact">
+      <strong>contact</strong>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1>We're in good shape.</h1>
+          <!-- <h1>We're in good shape.</h1> -->
         </div>
       </div>
     </div>
