@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blank</title>
+  <title>John Costa</title>
 
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- VENDOR SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -16,8 +16,8 @@
 <!-- <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script> -->
 
   <!-- APPLICATION SCRIPTS -->
-  <script src="jquerynav.js"></script>
-  <script src="home.js"></script>
+  <script src="assets/javascripts/jquerynav.js"></script>
+  <script src="assets/javascripts/home.js"></script>
 
 </head>
 <body>
@@ -35,10 +35,6 @@
             </button>
             <a href="#home" class="nav navbar-brand scroll">JOHN COSTA</a>
           </div>
-          <!--/.navbar-header-->
-        <!-- <ul class="nav navbar-nav navbar-right hidden-xs">
-          <li id="blognav"><a href="/blog" target="_blank">BLOG</a></li>
-        </ul> -->
         <ul class="nav navbar-nav navbar-right scrollnav hidden-xs">
           <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#about">ABOUT ME</a></li>
@@ -51,9 +47,6 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
-          <!-- <ul class="nav navbar-nav navbar-right visible-xs">
-            <li id="blognav"><a href="/blog" target="_blank">BLOG</a></li>
-          </ul> -->
         </div>
       </div>
       <!--/#main-nav.navbar-collapse-->
@@ -63,9 +56,11 @@
 
 <div id="home" class="page-section">
   <div class="container text-center homecontent">
-    <div><%= image_tag "key.svg" , class: "img-responsive" %></div>
-    <h1 class="heroText">Full Stack Development for Growth</h1>
-    <div class="taglineText">Focusing on growth and user retention, we deliver highly usable and extensible sites with a friendly attitude.</div>
+    <!-- <div><%= image_tag "key.svg" , class: "img-responsive" %></div> -->
+    <h1 class="heroText">Web Development Professional</h1>
+    <br>
+    <div class="taglineText">John Costa is a dedicated software engineer who works with the most up-to-date technologies to deliver eye catching and useful apps to clients and employers.</div>
+    <br>
     <a href="#projects" class="scroll btn btn-lg btn-primary learnmore">Learn More</a>
   </div>
 </div>
@@ -74,16 +69,79 @@
   <div class="page-section">
     <div id="projects">
       <strong>projects</strong>
-      <p>Bacon ipsum dolor amet doner swine alcatra, fatback beef ribs tenderloin kielbasa venison strip steak shank pastrami sirloin meatloaf. T-bone chicken pork chop, meatloaf jerky pig brisket ham beef ribs. Swine frankfurter pastrami doner drumstick pork. Jowl jerky salami tri-tip. Ham cow shankle doner salami swine capicola ground round corned beef spare ribs flank.
 
-        Sausage hamburger brisket corned beef short loin bacon. Fatback filet mignon pork chop t-bone biltong tongue. Turducken frankfurter swine, meatloaf sausage chuck ball tip ham pancetta pork belly tri-tip hamburger strip steak sirloin. Pastrami tongue cupim, rump corned beef bacon short ribs ham sirloin pig spare ribs frankfurter. Ham hock jerky meatloaf shank rump, ribeye pig leberkas pastrami. Spare ribs t-bone andouille ham porchetta tri-tip turducken venison flank. Frankfurter alcatra ham hock, doner ribeye meatloaf short loin.
+      <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" data-interval="false">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/images/macbook_bestintheland.png" alt="Best in the Land" class="col-sm-6">
+            <div class="col-sm-5">
+              <h1>Best in the Land</h1>
+              <h2>Rails Full Stack</h2>
+              <p>
+                Best in the Land is a forum for find the best items in any category. Users can create categories and add items
+                to those categories. Users vote on items to determine the best in each class. 
+              <p>
+              </p>
+              <p>
+                <a href="http://www.bestintheland.herokuapp.com/" target="_blank">bestintheland.herokuapp.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag "macbook_proph.png", class: "col-sm-6", alt: "Prophecy Sciences" %>
+            <div class="col-sm-5">
+              <h1>Prophecy Sciences</h1>
+              <h2>Python and js</h2>
+              <p>
+                Prophecy Sciences is a Y-Combinator backed startup with neuroscience-based games that provide insights on personality, aptitude, and optimal career fits. We were responsible for full stack development (including backend database design, and front end javascript game-play) as well as deployment and maintenance of the application on Heroku.
+              </p>
+              <p>
+                Additionally, we integrated with their development team as they hired new employees, and helped with setup and pair programming to bring new devs up to speed.
+              </p>
+              <p>
+                <a href="https://www.prophecysciences.com/" target="_blank">prophecysciences.com</a>
+              </p>
+            </div>
+          </div>
 
-        Filet mignon tenderloin meatloaf chuck biltong pork chop doner. T-bone bacon frankfurter, bresaola landjaeger ball tip capicola prosciutto pork chop doner. Chicken biltong flank drumstick. Filet mignon swine pork belly shoulder rump alcatra bresaola brisket chuck. Corned beef kielbasa venison landjaeger leberkas ground round, salami rump ham hock.
-
-        Doner fatback ground round t-bone andouille, spare ribs meatball pork belly bacon. Doner ball tip jerky tail ground round hamburger fatback. Chuck kevin brisket picanha t-bone capicola filet mignon tenderloin jerky boudin frankfurter pig. Ham hock leberkas short loin chuck andouille. Pig doner tri-tip, venison pork loin landjaeger brisket ham pancetta filet mignon jowl kielbasa. Ground round turducken tail biltong pork chop cow andouille strip steak flank kevin filet mignon cupim, alcatra pork belly venison. Spare ribs kielbasa fatback, jowl andouille beef meatball porchetta alcatra venison ribeye t-bone shoulder tenderloin ham hock.
-
-        Andouille shankle turkey capicola, pork loin spare ribs ham hock tri-tip alcatra filet mignon hamburger chuck shank porchetta jowl. Shoulder tail cow t-bone tri-tip short loin leberkas. Pork belly beef ribs biltong, turducken tenderloin prosciutto leberkas filet mignon sirloin doner alcatra. Salami shoulder pork chop alcatra pork belly prosciutto. Pork ball tip frankfurter, flank porchetta drumstick sirloin pig leberkas chuck sausage prosciutto jowl tenderloin tail. Short loin shankle ham picanha sirloin kielbasa turkey biltong bacon meatball swine doner. Chicken boudin filet mignon sausage, kevin tongue pork loin.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="fa fa-angle-left fa-5x prev"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="fa fa-angle-right fa-5x next"></span>
+        </a>
+      </div>
+
+      <div class="visible-xs">
+        <div class="col-sm-5">
+          <h1>Nouvola</h1>
+          <h2>Rails Full Stack</h2>
+          <p>
+            Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting a website.
+          </p>
+          <p>
+            We were responsible for implementing a front end redesign after a complete UI overhaul. Heavy javascript and ajax were required, to create a seamless user experience for a complicated back end infrastructure.
+          </p>
+          <p>
+            <a href="http://www.nouvola.com/" target="_blank">nouvola.com</a>
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <h1>Prophecy Sciences</h1>
+          <h2>Python and js</h2>
+          <p>
+            Prophecy Sciences is a Y-Combinator backed startup with neuroscience-based games that provide insights on personality, aptitude, and optimal career fits. We were responsible for full stack development (including backend database design, and front end javascript game-play) as well as deployment and maintenance of the application on Heroku.
+          </p>
+          <p>
+            Additionally, we integrated with their development team as they hired new employees, and helped with setup and pair programming to bring new devs up to speed.
+          </p>
+          <p>
+            <a href="https://www.prophecysciences.com/" target="_blank">prophecysciences.com</a>
+          </p>
+        </div>
     </div>
 
     <div class="page-section">
