@@ -12,21 +12,21 @@
 	font-weight: bold;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background: orange;
+  background: gray;
   color: white;
 }
 .alert#consult {
-    background-color: #5C4856;
-    margin-bottom: 0px;
-    border-radius: 0;
-    color: white !important;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-    @media (max-width: 768px) {
-        font-size: 16px;
-    }
+  background-color: #5C4856;
+  margin-bottom: 0px;
+  border-radius: 0;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 .page-section {
 	padding: 70px 0;
@@ -42,7 +42,7 @@
 	background-image: asset-url('JGHeroImage.jpg');
 	background-size: cover;
 	background-position: center center;
-	// opacity: 0.2;
+	opacity: 0.2;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -58,33 +58,42 @@
 		bottom: 0;
 		top: 0;
 		max-width: 80%;
-		max-height: 50%;
+		max-height: 70%;
 		margin: auto;
 		text-align: center;
 		
-			max-height: 70%;
-	}
+   max-height: 70%;
+ }
 
-	.img-responsive {
-		display: inline;
-	}
-	.heroText {
-		font-size: 45px;
-		line-height: 60px;
-        @media (max-width: 768px) {
-            font-size: 30px;
-            line-height: 30px;
-        }
-	}
-	.taglineText {
-        font-size: 22px;
-        margin: 15px auto;
-        max-width: 700px;
-        line-height: 1.5;
-        @media (max-width: 768px) {
-            font-size: 18px;
-        }
-    }
+ .img-responsive {
+  display: inline;
+}
+.heroText {
+  font-size: 45px;
+  line-height: 60px;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+.taglineText {
+  font-size: 22px;
+  margin: 15px auto;
+  max-width: 700px;
+  line-height: 1.5;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+}
+
+.page-section#projects {
+  height: 100%;
+  width: 100%;
+  .fa {
+    color: #E0B76E;
+    text-shadow: none;
+  }
 }
 
 body {x
@@ -96,7 +105,7 @@ body {x
   margin-top: 70px;
 }
 a {
-  color: grey;
+  color: gray;
 }
 a:hover, a:active, a:focus {
   color: #BF8D67;
@@ -107,7 +116,7 @@ a:hover, a:active, a:focus {
   }
 }
 h2 {
-  color: grey;
+  color: gray;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
@@ -207,5 +216,28 @@ div {
   background-color: black;
   padding-left: 2em;
 }
-
-
+.contactform {
+  text-align: center;
+}
+#aboutImage {
+  margin-top: .5em;
+}
+.learnmore {
+  margin-top: 2em;
+}
+.taglineText {
+  margin-top: 1em;
+}
+.carousel-inner {
+  background-color: white;
+  width: 100%;
+  /*max-height: 500px;*/
+  height: 30em;
+  vertical-align: middle;
+}
+/*#learnBtn {
+  padding-top: 2em;
+}*/
+/*.projectcontent {
+  background-color: black;
+}*/

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,38 +14,38 @@
   <!-- VENDOR SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script> -->
 
   <!-- APPLICATION SCRIPTS -->
   <script src="assets/javascripts/jquerynav.js"></script>
   <script src="assets/javascripts/home.js"></script>
+  <script src="assets/php/index.php"></script>
 
 </head>
 <body>
-
   <!-- NAVBAR -->
-    <div class="header">
-      <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="nav container-fluid">
-          <div class="navbar-header">
-            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#home" class="nav navbar-brand scroll">JOHN COSTA</a>
-          </div>
+  <div class="header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="nav container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#home" class="nav navbar-brand scroll">JOHN COSTA</a>
+        </div>
         <ul class="nav navbar-nav navbar-right scrollnav hidden-xs">
           <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#about">ABOUT ME</a></li>
+          <!-- <li><a href="#about">ABOUT ME</a></li> -->
           <li><a href="#contact">CONTACT</a></li>
         </ul>
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav scrollnav visible-xs">
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#about">ABOUT</a></li>
+            <!-- <li><a href="#about">ABOUT</a></li> -->
             <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
@@ -54,34 +55,76 @@
     <!--/.navbar-->
   </div>
 
-<div id="home" class="page-section">
-  <div class="container text-center homecontent">
-    <!-- <div><%= image_tag "key.svg" , class: "img-responsive" %></div> -->
-    <h1 class="heroText">Web Development Professional</h1>
-    <br>
-    <div class="taglineText">John Costa is a dedicated software engineer who works with the most up-to-date technologies to deliver eye catching and useful apps to clients and employers.</div>
-    <br>
-    <a href="#projects" class="scroll btn btn-lg btn-primary learnmore">Learn More</a>
+  <!-- HOME PAGE SECTION -->
+  <div id="home" class="page-section">
+    <div class="container homecontent">
+      <h1 class="heroText text-center">about</h1>
+      <hr>
+      <!-- Photo and Copy Desktop -->
+      <div class="row hidden-xs">
+      <img src="assets/images/Portraitworkwitholive.jpg" alt="pair programming with pooch" class="col-sm-7" id="aboutImage">
+      <div class="taglineText col-sm-5">
+        <p>Hey there.  My name is John Costa.  I’m a web developer who is excited about working with new technologies 
+          to build out great ideas.  Simple and clean design is my aesthetic, and tools that encourage fast prototyping,
+          like Ruby on Rails, are my preference. 
+        </p>
+        <p>I recently completed a full-stack web development immersive program at General Assembly in San Francisco, 
+         and I am searching for a job here in the Bay Area.
+        </p>
+        <p>A former professional, when I’m not coding I enjoy practicing photography.  I’m looking forward to bringing 
+        my skills and experience to the next great project.  
+        </p>
+        <p>Check out my <a href="https://www.dropbox.com/s/d3fkve0rydgfl0u/JohnCostaResume.pdf?dl=0resume" title="John Costa's resume">resume</a>.  You can also find me on <a href="https://www.linkedin.com/in/costajohnt">LinkedIn</a> and <a href="https://github.com/costajohnt">GitHub</a>.  Thanks for stopping by!
+        </p>
+      </div>
+      </div>
+      <!-- Photo and Copy Mobile -->
+      <div class="visible-xs">
+        <img src="assets/images/Portraitworkwitholive.jpg" alt="pair programming with pooch" class="col-xs-12" id="aboutImage">
+        <br>
+        <br>
+        <div class="taglineText col-xs-12">
+          <p>Hey there.  My name is John Costa.  I’m a web developer who is excited about working with new technologies 
+            to build out great ideas.  Simple and clean design is my aesthetic, and tools that encourage fast prototyping,
+            like Ruby on Rails, are my preference. 
+          </p>
+          <p>I recently completed a full-stack web development immersive program at General Assembly in San Francisco, 
+           and I am searching for a job here in the Bay Area.
+          </p>
+          <p>A former professional, when I’m not coding I enjoy practicing photography.  I’m looking forward to bringing 
+          my skills and experience to the next great project.  
+          </p>
+          <p>Check out my <a href="https://www.dropbox.com/s/d3fkve0rydgfl0u/JohnCostaResume.pdf?dl=0resume" title="John Costa's resume">resume</a>.  You can also find me on <a href="https://www.linkedin.com/in/costajohnt">LinkedIn</a> and <a href="https://github.com/costajohnt">GitHub</a>.  Thanks for stopping by!
+          </p>
+        </div>
+      </div>
+      <!-- Learn More Btn -->
+      <div class="text-center" id="learnBtn">
+      <a href="#projects" class="scroll btn btn-lg btn-primary learnmore">Learn More</a>
+      </div>
+
+    </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="page-section">
-    <div id="projects">
-      <strong>projects</strong>
 
-      <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" data-interval="false">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="assets/images/macbook_bestintheland.png" alt="Best in the Land" class="col-sm-6">
-            <div class="col-sm-5">
-              <h1>Best in the Land</h1>
-              <h2>Rails Full Stack</h2>
-              <p>
-                Best in the Land is a forum for find the best items in any category. Users can create categories and add items
-                to those categories. Users vote on items to determine the best in each class. 
-              <p>
+  <!-- PROJECTS SECTION -->
+  <div id="projects" class="page-section">
+   <div class="container projectcontent">    
+    <div class="page-header text-center">
+      <h1 style="color: white;">Projects</h1>
+      <br>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" data-interval="false">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/images/macbook_bestintheland.png" alt="Best in the Land" class="col-sm-7" style="top: 4em;">
+          <div class="col-sm-4" style="top: 5em;">
+            <h1>Best in the Land</h1>
+            <h2>Rails Full Stack</h2>
+            <p>
+              Best in the Land is a forum for find the best items in any category. Users can create categories and add items
+              to those categories. Users vote on items to determine the best in each class. 
               </p>
               <p>
                 <a href="http://www.bestintheland.herokuapp.com/" target="_blank">bestintheland.herokuapp.com</a>
@@ -89,98 +132,105 @@
             </div>
           </div>
           <div class="item">
-            <%= image_tag "macbook_proph.png", class: "col-sm-6", alt: "Prophecy Sciences" %>
-            <div class="col-sm-5">
-              <h1>Prophecy Sciences</h1>
-              <h2>Python and js</h2>
+            <img src="assets/images/macbook_messlife.png" alt="Best in the Land" class="col-sm-7" style="top: 4em;">
+            <div class="col-sm-4" style="top: 5em;">
+              <h1>Messlife</h1>
+              <h2>MongoDB, Express, Node.js</h2>
               <p>
-                Prophecy Sciences is a Y-Combinator backed startup with neuroscience-based games that provide insights on personality, aptitude, and optimal career fits. We were responsible for full stack development (including backend database design, and front end javascript game-play) as well as deployment and maintenance of the application on Heroku.
+                Messlife empowers couriers with the ability to self dispatch.  Couriers can choose and groups their own jobs and routes and mark them as completed as they go.
               </p>
               <p>
-                Additionally, we integrated with their development team as they hired new employees, and helped with setup and pair programming to bring new devs up to speed.
               </p>
               <p>
-                <a href="https://www.prophecysciences.com/" target="_blank">prophecysciences.com</a>
+                <a href="https://www.messlife.herokuapp.com/" target="_blank">messlife.herokuapp.com</a>
               </p>
             </div>
           </div>
-
-      </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="fa fa-angle-left fa-5x prev"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="fa fa-angle-right fa-5x next"></span>
-        </a>
-      </div>
-
-      <div class="visible-xs">
-        <div class="col-sm-5">
-          <h1>Nouvola</h1>
-          <h2>Rails Full Stack</h2>
-          <p>
-            Nouvola is a cloud based, stress testing service, which can mimic hundreds of thousands of users visiting a website.
-          </p>
-          <p>
-            We were responsible for implementing a front end redesign after a complete UI overhaul. Heavy javascript and ajax were required, to create a seamless user experience for a complicated back end infrastructure.
-          </p>
-          <p>
-            <a href="http://www.nouvola.com/" target="_blank">nouvola.com</a>
-          </p>
+          <div class="item">
+            <img src="assets/images/macbook_letsride.png" alt="Let's Ride" class="col-sm-7" style="top: 4em;">
+            <div class="col-sm-4" style="top: 5em;">
+              <h1>Let's Ride</h1>
+              <h2>Rails Full Stack</h2>
+              <p>
+               Let's Ride connects cyclists and facilitates leading and joing group rides with new and old friends.
+              </p>
+              <p>
+              </p>
+              <p>
+                <a href="https://www.lets-ride-app.herokuapp.com/" target="_blank">lets-ride-app.herokuapp.com</a>
+              </p>
+            </div>
+          </div>
+        </div>  
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="fa fa-angle-left fa-5x prev"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="fa fa-angle-right fa-5x next"></span>
+          </a>
         </div>
-        <div class="col-sm-5">
-          <h1>Prophecy Sciences</h1>
-          <h2>Python and js</h2>
-          <p>
-            Prophecy Sciences is a Y-Combinator backed startup with neuroscience-based games that provide insights on personality, aptitude, and optimal career fits. We were responsible for full stack development (including backend database design, and front end javascript game-play) as well as deployment and maintenance of the application on Heroku.
-          </p>
-          <p>
-            Additionally, we integrated with their development team as they hired new employees, and helped with setup and pair programming to bring new devs up to speed.
-          </p>
-          <p>
-            <a href="https://www.prophecysciences.com/" target="_blank">prophecysciences.com</a>
-          </p>
+
+        <!-- Project View Extra Small -->
+        <div class="visible-xs" style="background-color: white;">
+        <div class="page-header text-center">
+          <h1>Projects</h1>
         </div>
+          <!-- Best in the Land XS view -->
+          <div class="col-sm-5">
+            <h1>Best in the Land</h1>
+            <h2>Rails Full Stack</h2>
+            <p>
+              Best in the Land is a forum for find the best items in any category. Users can create categories and add items
+              to those categories. Users vote on items to determine the best in each class. 
+            </p>
+            <p>
+              <a href="http://www.bestintheland.herokuapp.com/" target="_blank">bestintheland.herokuapp.com</a>
+            </p>
+          </div>
+          <!-- MessLife XS view -->
+          <div class="col-sm-5">
+            <h1>Messlife</h1>
+            <h2>MongoDB, Express, Node.js</h2>
+            <p>
+              Messlife empowers couriers with the ability to self dispatch.  Couriers can choose and groups their own jobs and routes and mark them as completed as they go.
+            </p>
+            <p>
+            </p>
+            <p>
+              <a href="https://www.messlife.herokuapp.com/" target="_blank">messlife.herokuapp.com</a>
+            </p>
+          </div>
+          <!-- Let's Ride XS view       -->
+          <div class="col-sm-5">
+            <h1>Let's Ride</h1>
+            <h2>Rails Full Stack</h2>
+            <p>
+            Let's Ride connects cyclists and facilitates leading and joing group rides with new and old friends.
+            </p>
+            <p>
+              <a href="https://www.messlife.herokuapp.com/" target="_blank">messlife.herokuapp.com</a>
+            </p>
+          </div>      
+        </div>
+        <!-- End XS Project View -->
+      </div>
     </div>
+  </div>
+<div class="page-section" id="contact">
+<div class="page-header text-center">
+  <h1>Contact</h1>
+  <hr>
+</div>
+</div>
 
-    <div class="page-section">
-      <div id="about">
-        <strong>about</strong>
-        <p>Bacon ipsum dolor amet doner swine alcatra, fatback beef ribs tenderloin kielbasa venison strip steak shank pastrami sirloin meatloaf. T-bone chicken pork chop, meatloaf jerky pig brisket ham beef ribs. Swine frankfurter pastrami doner drumstick pork. Jowl jerky salami tri-tip. Ham cow shankle doner salami swine capicola ground round corned beef spare ribs flank.
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <!-- <h1>We're in good shape.</h1> -->
+    </div>
+  </div>
 
-          Sausage hamburger brisket corned beef short loin bacon. Fatback filet mignon pork chop t-bone biltong tongue. Turducken frankfurter swine, meatloaf sausage chuck ball tip ham pancetta pork belly tri-tip hamburger strip steak sirloin. Pastrami tongue cupim, rump corned beef bacon short ribs ham sirloin pig spare ribs frankfurter. Ham hock jerky meatloaf shank rump, ribeye pig leberkas pastrami. Spare ribs t-bone andouille ham porchetta tri-tip turducken venison flank. Frankfurter alcatra ham hock, doner ribeye meatloaf short loin.
+</body>
+</html>
 
-          Filet mignon tenderloin meatloaf chuck biltong pork chop doner. T-bone bacon frankfurter, bresaola landjaeger ball tip capicola prosciutto pork chop doner. Chicken biltong flank drumstick. Filet mignon swine pork belly shoulder rump alcatra bresaola brisket chuck. Corned beef kielbasa venison landjaeger leberkas ground round, salami rump ham hock.
-
-          Doner fatback ground round t-bone andouille, spare ribs meatball pork belly bacon. Doner ball tip jerky tail ground round hamburger fatback. Chuck kevin brisket picanha t-bone capicola filet mignon tenderloin jerky boudin frankfurter pig. Ham hock leberkas short loin chuck andouille. Pig doner tri-tip, venison pork loin landjaeger brisket ham pancetta filet mignon jowl kielbasa. Ground round turducken tail biltong pork chop cow andouille strip steak flank kevin filet mignon cupim, alcatra pork belly venison. Spare ribs kielbasa fatback, jowl andouille beef meatball porchetta alcatra venison ribeye t-bone shoulder tenderloin ham hock.
-
-          Andouille shankle turkey capicola, pork loin spare ribs ham hock tri-tip alcatra filet mignon hamburger chuck shank porchetta jowl. Shoulder tail cow t-bone tri-tip short loin leberkas. Pork belly beef ribs biltong, turducken tenderloin prosciutto leberkas filet mignon sirloin doner alcatra. Salami shoulder pork chop alcatra pork belly prosciutto. Pork ball tip frankfurter, flank porchetta drumstick sirloin pig leberkas chuck sausage prosciutto jowl tenderloin tail. Short loin shankle ham picanha sirloin kielbasa turkey biltong bacon meatball swine doner. Chicken boudin filet mignon sausage, kevin tongue pork loin.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-
-      <div class="page-section">
-        <div id="contact">
-          <strong>contact</strong>
-          <p>Bacon ipsum dolor amet doner swine alcatra, fatback beef ribs tenderloin kielbasa venison strip steak shank pastrami sirloin meatloaf. T-bone chicken pork chop, meatloaf jerky pig brisket ham beef ribs. Swine frankfurter pastrami doner drumstick pork. Jowl jerky salami tri-tip. Ham cow shankle doner salami swine capicola ground round corned beef spare ribs flank.
-
-            Sausage hamburger brisket corned beef short loin bacon. Fatback filet mignon pork chop t-bone biltong tongue. Turducken frankfurter swine, meatloaf sausage chuck ball tip ham pancetta pork belly tri-tip hamburger strip steak sirloin. Pastrami tongue cupim, rump corned beef bacon short ribs ham sirloin pig spare ribs frankfurter. Ham hock jerky meatloaf shank rump, ribeye pig leberkas pastrami. Spare ribs t-bone andouille ham porchetta tri-tip turducken venison flank. Frankfurter alcatra ham hock, doner ribeye meatloaf short loin.
-
-            Filet mignon tenderloin meatloaf chuck biltong pork chop doner. T-bone bacon frankfurter, bresaola landjaeger ball tip capicola prosciutto pork chop doner. Chicken biltong flank drumstick. Filet mignon swine pork belly shoulder rump alcatra bresaola brisket chuck. Corned beef kielbasa venison landjaeger leberkas ground round, salami rump ham hock.
-
-            Doner fatback ground round t-bone andouille, spare ribs meatball pork belly bacon. Doner ball tip jerky tail ground round hamburger fatback. Chuck kevin brisket picanha t-bone capicola filet mignon tenderloin jerky boudin frankfurter pig. Ham hock leberkas short loin chuck andouille. Pig doner tri-tip, venison pork loin landjaeger brisket ham pancetta filet mignon jowl kielbasa. Ground round turducken tail biltong pork chop cow andouille strip steak flank kevin filet mignon cupim, alcatra pork belly venison. Spare ribs kielbasa fatback, jowl andouille beef meatball porchetta alcatra venison ribeye t-bone shoulder tenderloin ham hock.
-
-            Andouille shankle turkey capicola, pork loin spare ribs ham hock tri-tip alcatra filet mignon hamburger chuck shank porchetta jowl. Shoulder tail cow t-bone tri-tip short loin leberkas. Pork belly beef ribs biltong, turducken tenderloin prosciutto leberkas filet mignon sirloin doner alcatra. Salami shoulder pork chop alcatra pork belly prosciutto. Pork ball tip frankfurter, flank porchetta drumstick sirloin pig leberkas chuck sausage prosciutto jowl tenderloin tail. Short loin shankle ham picanha sirloin kielbasa turkey biltong bacon meatball swine doner. Chicken boudin filet mignon sausage, kevin tongue pork loin.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <!-- <h1>We're in good shape.</h1> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </body>
-    </html>
