@@ -108,7 +108,10 @@ a {
   color: gray;
 }
 a:hover, a:active, a:focus {
-  color: #BF8D67;
+  color: black;
+}
+a.navbar-brand:hover {
+  color: white;
 }
 @media (max-width: 768px) {
   h1 {
@@ -235,9 +238,12 @@ div {
   height: 30em;
   vertical-align: middle;
 }
-/*#learnBtn {
-  padding-top: 2em;
-}*/
-/*.projectcontent {
-  background-color: black;
-}*/
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.aboutLinks:hover {
+  color: black;
+}
